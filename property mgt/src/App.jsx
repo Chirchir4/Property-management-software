@@ -17,7 +17,7 @@ import Dashboard from "./scenes/dashboard";
 // import FAQ from "./scenes/faq";
 // import Geography from "./scenes/geography";
 // import Calendar from"./scenes/Calendar"
-// import { Route, Routes } from 'react-router-dom'
+import { Route, Routes,BrowserRouter as Router } from 'react-router-dom'
 
 
 function App() {
@@ -26,10 +26,11 @@ function App() {
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline/>
-    <div className="App">
+    <div className="App" style={{display:"flex"}}>
       <Sidebar/>
 <main className='content'>
 <Topbar/>
+<Router>
     <Routes>
       <Route path='/' element={<Dashboard/>}/>
       {/* <Route path='/team' element={<Team/>}/>
@@ -43,6 +44,7 @@ function App() {
       <Route path='/geography' element={<Geography/>}/>
       <Route path='/Calendar' element={<Calendar/>}/> */}
     </Routes>
+    </Router>
 </main>
     </div>
     </ThemeProvider>
