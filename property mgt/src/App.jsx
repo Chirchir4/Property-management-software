@@ -8,8 +8,9 @@ import Sidebar from './scenes/global/Sidebar'
 import Dashboard from "./scenes/dashboard";
 import Invoices from "./scenes/Invoices";
 import Contacts from "./scenes/Contacts";
+
 // import Bar from "./scenes/bar";
-// import Form from "./scenes/form";
+// import Form from "./scenes/Form";
 // import Line from "./scenes/line";
 // import Pie from "./scenes/pie";
 // import FAQ from "./scenes/faq";
@@ -18,6 +19,7 @@ import Contacts from "./scenes/Contacts";
 
 import { Route, Routes,BrowserRouter as Router } from 'react-router-dom'
 import Team from './scenes/Teams'
+import Form from './scenes/Form'
 
 
 function App() {
@@ -37,7 +39,7 @@ function App() {
       <Route path='/contacts' element={<Contacts/>}/>
       <Route path='/invoices' element={<Invoices/>}/>
       {/* <Route path='/Bar' element={<Bar/>}/> */}
-      {/* <Route path='/form' element={<Form/>}/> */}
+      <Route path='/form' element={<Form/>}/>
       {/* <Route path='/line' element={<Line/>}/>
       <Route path='/pie' element={<Pie/>}/>
       <Route path='/faq' element={<FAQ/>}/>
