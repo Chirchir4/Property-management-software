@@ -20,6 +20,8 @@ import Contacts from "./scenes/Contacts";
 import { Route, Routes,BrowserRouter as Router } from 'react-router-dom'
 import Team from './scenes/Teams'
 import Form from './scenes/Form'
+import { FAQ } from './scenes/FAQ'
+// import { Kalendar } from './scenes/Calendar'
 
 
 function App() {
@@ -40,11 +42,11 @@ function App() {
       <Route path='/invoices' element={<Invoices/>}/>
       {/* <Route path='/Bar' element={<Bar/>}/> */}
       <Route path='/form' element={<Form/>}/>
-      {/* <Route path='/line' element={<Line/>}/>
-      <Route path='/pie' element={<Pie/>}/>
-      <Route path='/faq' element={<FAQ/>}/>
-      <Route path='/geography' element={<Geography/>}/>
-      <Route path='/Calendar' element={<Calendar/>}/> */}
+      {/* <Route path='/line' element={<Line/>}/> */}
+      {/* <Route path='/pie' element={<Pie/>}/> */}
+      <Route path='/FAQ' element={<FAQ/>}/>
+      {/* <Route path='/geography' element={<Geography/>}/> 
+      <Route path='/kalendar' element={<Kalendar/>}/> */}
     </Routes>
 
 </main>
