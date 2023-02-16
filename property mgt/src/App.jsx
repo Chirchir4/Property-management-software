@@ -25,6 +25,7 @@ import Bar from './scenes/Bar'
 import Pie from './scenes/Pie'
 import { Line } from './scenes/Line'
 import Geo from './scenes/Geo'
+import Calendar from './scenes/Calendar'
 // import { Calendart } from './scenes/Calendart'
 
 
@@ -50,7 +51,7 @@ function App() {
       <Route path='/pie' element={<Pie/>}/>
       <Route path='/FAQ' element={<FAQ/>}/>
       <Route path='/geography' element={<Geo/>}/> 
-      {/* <Route path='/Calendar' element={<Calendart/>}/> */}
+      <Route path='/Calendar' element={<Calendar/>}/>
     </Routes>
 
 </main>
